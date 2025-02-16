@@ -1,7 +1,3 @@
-Here is your **README.md** file in proper **Markdown format**:  
-
----
-
 ```markdown
 # 🛒 Shopping List App
 
