@@ -83,7 +83,7 @@ flutter run
 
 
 ## 📌 Contributors
-- **Your Name** - [GitHub](https://github.com/ayuktha63)
+- **Ayuktha63** - [GitHub](https://github.com/ayuktha63)
 - Add more contributors if applicable.
 
 ---
