@@ -31,7 +31,7 @@ A **Flutter** mobile application that allows users to **add, view, and delete sh
 
 #### 📌 Backend (Node.js)
 ```sh
-git clone https://github.com/your-repo/shopping-list-app.git
+git clone https://github.com/ayuktha63/ICT_Inteernship_flutter.git
 cd shopping-list-app/backend
 npm install
 ```
@@ -69,6 +69,10 @@ flutter run
 ```
 
 ---
+## ScreenShots
+![Insight Screen](Screeshots/InsightsPage.png)
+![Main Screen](Screeshots/MainPage.png)
+![Scan Screen](Screeshots/ScanPage.png)
 
 ## 📌 API Endpoints
 
@@ -78,15 +82,9 @@ flutter run
 | **GET** | `/getItems` | Get all items |
 | **DELETE** | `/deleteItem/:id` | Delete an item |
 
----
-
-## 📌 Screenshots
-📸 Add relevant screenshots of your app here.
-
----
 
 ## 📌 Contributors
-- **Your Name** - [GitHub](https://github.com/your-github)
+- **Your Name** - [GitHub](https://github.com/ayuktha63)
 - Add more contributors if applicable.
 
 ---
@@ -98,14 +96,3 @@ This project is licensed under the **MIT License**.
 
 🎉 **Happy Coding!** 🚀
 ```
-
----
-
-### **📌 What’s Included?**
-✅ **Proper Markdown formatting**  
-✅ **Step-by-step installation guide**  
-✅ **API Documentation**  
-✅ **Contributors & License Section**  
-✅ **Screenshots Placeholder**  
-
-Now, save this as `README.md` in your project folder. Let me know if you need modifications! 🚀😊
