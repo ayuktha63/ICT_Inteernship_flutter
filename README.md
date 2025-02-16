@@ -70,9 +70,8 @@ flutter run
 
 ---
 ## ScreenShots
-![Insight Screen](https://github.com/ayuktha63/ICT_Inteernship_flutter/blob/main/Screenshots/InsightsPage.png)
-![Main Screen](https://github.com/ayuktha63/ICT_Inteernship_flutter/blob/main/Screenshots/InsightsPage.pngMainPage.png)
-![Scan Screen](https://github.com/ayuktha63/ICT_Inteernship_flutter/blob/main/Screenshots/ScanPage.png)
+<img src="https://github.com/ayuktha63/ICT_Inteernship_flutter/blob/main/Screenshots/InsightsPage.png" width="300"> <img src="https://github.com/ayuktha63/ICT_Inteernship_flutter/blob/main/Screenshots/MainPage.png" width="300"> <img src="https://github.com/ayuktha63/ICT_Inteernship_flutter/blob/main/Screenshots/ScanPage.png" width="300">
+
 
 ## 📌 API Endpoints
 
