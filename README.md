@@ -1,4 +1,3 @@
-```markdown
 # 🛒 Shopping List App
 
 A **Flutter** mobile application that allows users to **add, view, and delete shopping items**, backed by a **Node.js & MongoDB** server.
