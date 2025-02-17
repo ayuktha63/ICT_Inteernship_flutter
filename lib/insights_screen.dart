@@ -11,7 +11,7 @@ class _InsightsScreenState extends State<InsightsScreen> {
   List items = [];
 
   Future<void> fetchInsights() async {
-    final response = await http.get(Uri.parse("http://localhost:5050/weeklyComparison"));
+    final response = await http.get(Uri.parse("http://192.168.1.2:5050/weeklyComparison"));
     if (response.statusCode == 200) {
       setState(() {
         items = json.decode(response.body);
@@ -39,8 +39,8 @@ class _InsightsScreenState extends State<InsightsScreen> {
               child: ListView.builder(
                 itemCount: items.length,
                 itemBuilder: (context, index) {
-                  double latestPrice = items[index]["latestPrice"];
-                  double previousPrice = items[index]["previousPrice"];
+                  double latestPrice = (items[index]["latestPrice"] as num).toDouble();
+                  double previousPrice = (items[index]["previousPrice"] as num).toDouble();
                   double priceDifference = latestPrice - previousPrice;
                   String status = priceDifference > 0 ? "Increased" : "Decreased";
                   String percentageChange = ((priceDifference / previousPrice) * 100).toStringAsFixed(2);

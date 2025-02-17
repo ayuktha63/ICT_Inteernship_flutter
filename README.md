@@ -58,7 +58,7 @@ If using **MongoDB Atlas**, update `server.js` with your connection string.
 cd backend
 node server.js
 ```
-Server runs on: `http://localhost:5050/`
+Server runs on: `http://192.168.1.2:5050/`
 
 ---
 

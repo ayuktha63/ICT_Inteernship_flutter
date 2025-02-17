@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'scan_screen.dart';
 import 'insights_screen.dart';
+import 'main.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -12,6 +13,15 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () {
+              Navigator.pushReplacement(context,
+                  MaterialPageRoute(builder: (context) => AuthScreen()));
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Padding(
@@ -26,11 +36,14 @@ class HomeScreen extends StatelessWidget {
               ),
               SizedBox(height: 30),
               _buildButton(context, "Scan", Icons.camera_alt, Colors.blue, () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => ScanScreen()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ScanScreen()));
               }),
               SizedBox(height: 20),
-              _buildButton(context, "Insights", Icons.insights, Colors.orange, () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => InsightsScreen()));
+              _buildButton(context, "Insights", Icons.insights, Colors.orange,
+                  () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => InsightsScreen()));
               }),
             ],
           ),
@@ -39,7 +52,8 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildButton(BuildContext context, String text, IconData icon, Color color, VoidCallback onPressed) {
+  Widget _buildButton(BuildContext context, String text, IconData icon,
+      Color color, VoidCallback onPressed) {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(

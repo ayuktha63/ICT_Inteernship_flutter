@@ -15,7 +15,7 @@ class _ScanScreenState extends State<ScanScreen> {
 
   Future<void> addItem() async {
     final response = await http.post(
-      Uri.parse("http://localhost:5050/addItem"),
+      Uri.parse("http://192.168.1.2:5050/addItem"),
       headers: {"Content-Type": "application/json"},
       body: json.encode({
         "name": itemNameController.text,
@@ -33,7 +33,7 @@ class _ScanScreenState extends State<ScanScreen> {
   }
 
   Future<void> fetchItems() async {
-    final response = await http.get(Uri.parse("http://localhost:5050/getItems"));
+    final response = await http.get(Uri.parse("http://192.168.1.2:5050/getItems"));
     if (response.statusCode == 200) {
       setState(() {
         items = json.decode(response.body);
@@ -42,7 +42,7 @@ class _ScanScreenState extends State<ScanScreen> {
   }
 
   Future<void> deleteItem(String itemId) async {
-    final response = await http.delete(Uri.parse("http://localhost:5050/deleteItem/$itemId"));
+    final response = await http.delete(Uri.parse("http://192.168.1.2:5050/deleteItem/$itemId"));
 
     if (response.statusCode == 200) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Item deleted successfully")));
