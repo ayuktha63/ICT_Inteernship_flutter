@@ -84,7 +84,6 @@ flutter run
 
 ## 📌 Contributors
 - **Ayuktha63** - [GitHub](https://github.com/ayuktha63)
-- Add more contributors if applicable.
 
 ---
 
